@@ -15,12 +15,12 @@ public class SecondHighestSalaryArrayAndStream {
 		// Input: [4000, 3000, 1000, 2000]
 		// Output: 3000
 
-		Integer[] salArr = { 4000, 11000, 2000, 5000, 3000, 1000, 2000, 11000 };
+		Integer[] arr = { 4000, 3000, 1000, 2000 };
 
-		List<Integer> collect = Arrays.asList(salArr).stream().distinct().sorted(Comparator.reverseOrder()).limit(2)
-				.collect(Collectors.toList());
+		Integer secHighSal = Arrays.asList(arr).stream().sorted(Comparator.reverseOrder()).limit(2).skip(1).findFirst()
+				.orElse(null);
 
-		System.out.println("Second Highest Salary: " + collect.get(1));
+		System.out.println("Second Highest Salary: " + secHighSal);
 
 	}
 

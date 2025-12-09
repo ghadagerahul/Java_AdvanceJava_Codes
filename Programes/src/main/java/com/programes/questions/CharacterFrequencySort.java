@@ -44,6 +44,8 @@ public class CharacterFrequencySort {
 		});
 
 		list.stream().forEach(System.out::print);
+		
+		
 	}
 
 }

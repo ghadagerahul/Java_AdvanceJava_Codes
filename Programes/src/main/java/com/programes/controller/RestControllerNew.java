@@ -46,7 +46,7 @@ public class RestControllerNew {
 		emplList.get(id);
 
 		ResponseEntity<Epmloyee> responseEntity = new ResponseEntity<Epmloyee>(HttpStatus.OK);
-		
+
 		return emplList.get(id);
 
 	}
